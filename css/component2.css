@@ -1,0 +1,199 @@
+* {
+	position: relative;
+}
+ body{
+ 	background-image: url(imagens/found.jpg);
+ }
+
+
+.component {
+	height: 7em;
+}
+
+.cn-button {
+	top: 110%;
+	left: 49.8%;
+	z-index: 11;
+	margin-top: -6.25em;
+	margin-left: -2.25em;
+	width: 140px;/*Largura do circulo*/
+	height: 140px;/*Altura do circulo*/
+	border: none;
+	border-radius: 50%;
+	background: none;
+	background-color: #870002; /*Cor do circulo*/
+	color: white; /*Cor de letra*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	transition: 1s;	
+}
+.cn-button:hover{
+	background-color: white; /*Cor do circulo*/
+	color: #870002;
+}
+
+.csstransforms .cn-wrapper {
+	overflow: hidden;
+	position: absolute;
+	top: 10%;/*Altura dos botoes*/
+	left: 49%;
+	z-index: 10;
+	margin-top: -13em;
+	margin-left: -13.5em;
+	width: 27em;
+	height: 27em;
+	border-radius: 50%;
+	transition: all .3s ease 0.3s;
+	transform: scale(0.1);
+
+}
+
+.csstransforms .cn-wrapper:after{
+  overflow: hidden;		
+  font-size:2em;
+  width:6.2em;
+  height:6.2em;
+  left: 50%;
+  top:50%;
+  margin-top: -3.1em;
+  border-radius: 50%;
+  z-index:10;
+}
+
+.csstransforms .opened-nav {
+	border-radius: 50%;
+	transition: all .3s ease;
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+.csstransforms .cn-wrapper li {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	margin-top: -1.3em;
+	margin-left: -10em;
+	width: 10em;
+	height: 10em;
+	font-size: 1.5em;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: rotate(76deg) skew(60deg);
+	-moz-transform: rotate(76deg) skew(60deg);
+	-ms-transform: rotate(76deg) skew(60deg);
+	transform: rotate(76deg) skew(60deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	pointer-events: none;
+}
+.csstransforms .cn-wrapper li a {
+	overflow: hidden;
+	position: absolute;
+	right: -7.25em;
+	bottom: -7.25em;
+	display: block;
+	width: 14.5em;
+	height: 14.5em; /*altura do pulo*/
+	border-radius: 80%;
+	background: #429a67;
+	background: -webkit-radial-gradient(transparent 35%, #870002 35%);
+	background: -moz-radial-gradient(transparent 35%, #870002 35%);
+	background: radial-gradient(transparent 35%, #870002 35%);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	line-height: 2;
+	-ms-transform: skew(-60deg) rotate(-75deg) scale(1);
+	transform: skew(-60deg) rotate(-75deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: auto;
+}
+
+.csstransforms .cn-wrapper li a span {
+	position: relative;
+	top: 1.8em;
+	display: block;
+	font-size: .5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 1s;
+}
+
+.csstransforms .cn-wrapper li a:hover,
+.csstransforms .cn-wrapper li a:active,
+.csstransforms .cn-wrapper li a:focus {
+	background: -webkit-radial-gradient(transparent 35%, white 35%); /* cor do efeito */
+	background: -moz-radial-gradient(transparent 35%, white 35%);
+	background: radial-gradient(transparent 35%, white 35%);
+	color: #870002;
+}
+.csstransforms .cn-wrapper li a:focus {
+    position: fixed;
+}
+
+.csstransforms .opened-nav li {
+	-webkit-transition: all .3s ease .3s;
+	-moz-transition: all .3s ease .3s;
+	transition: all .3s ease .3s;
+}
+
+.csstransforms .opened-nav li:first-child {
+	-webkit-transform: rotate(-20deg) skew(60deg);
+	-moz-transform: rotate(-20deg) skew(60deg);
+	-ms-transform: rotate(-20deg) skew(60deg);
+	transform: rotate(-20deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(2) {
+	-webkit-transform: rotate(12deg) skew(60deg);
+	-moz-transform: rotate(12deg) skew(60deg);
+	-ms-transform: rotate(12deg) skew(60deg);
+	transform: rotate(12deg) skew(60deg);
+}
+
+.csstransforms .opened-nav  li:nth-child(3) {
+	-webkit-transform: rotate(44deg) skew(60deg);
+	-moz-transform: rotate(44deg) skew(60deg);
+	-ms-transform: rotate(44deg) skew(60deg);
+	transform: rotate(44deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(4) {
+	-webkit-transform: rotate(76deg) skew(60deg);
+	-moz-transform: rotate(76deg) skew(60deg);
+	-ms-transform: rotate(76deg) skew(60deg);
+	transform: rotate(76deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(5) {
+	-webkit-transform: rotate(108deg) skew(60deg);
+	-moz-transform: rotate(108deg) skew(60deg);
+	-ms-transform: rotate(108deg) skew(60deg);
+	transform: rotate(108deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(6) {
+	-webkit-transform: rotate(140deg) skew(60deg);
+	-moz-transform: rotate(140deg) skew(60deg);
+	-ms-transform: rotate(140deg) skew(60deg);
+	transform: rotate(140deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(7) {
+	-webkit-transform: rotate(172deg) skew(60deg);
+	-moz-transform: rotate(172deg) skew(60deg);
+	-ms-transform: rotate(172deg) skew(60deg);
+	transform: rotate(172deg) skew(60deg);
+}
+.no-csstranforms li{
+	width: 4em;
+	height: 4em;
+}

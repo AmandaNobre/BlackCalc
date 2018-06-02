@@ -1,0 +1,141 @@
+<html lang="pt-br">
+<head>
+	<title>BlackCalc</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="imagens/Logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<style type="text/css">
+	.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+	}
+	.back-link a:hover,
+	.back-link a:focus {
+		color: #408536; 
+		text-decoration: none;
+		border-bottom: 1px #408536 solid;
+	}
+	.entry-header {
+		text-align: left;
+		margin: 0 auto 50px auto;
+		width: 80%;
+        max-width: 978px;
+		position: relative;
+		z-index: 10001;
+	}
+	#demo-content {
+		padding-top: 3%;
+	}
+		body{
+			font-family: arial;
+			background-image: url(imagens/found.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			width: 99%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.logo{
+			margin: auto;
+			width: 32%;
+			height: 45%;
+		}
+		.title{
+			color: white;
+			font-size: 1.5em;
+			font-weight: bold;
+			line-height: 1.5;
+			background-color: #870002;
+			width: 25%;
+			height: 6%;
+			border-radius: 12px;
+			border: none;
+			outline: 0;
+			text-decoration: none;
+		}
+		.botao{
+			background-color: #870002;
+			width: 160px;
+			height: 50px;
+			border-radius: 12px;
+			border: none;
+			transition: 1s;
+			outline: 0;
+		}
+		.botao:hover{
+			background-color: white;
+			outline: 0;
+		}
+		.texto{
+			color: white;
+			font-size: 1.8em;
+			font-weight: bold;			
+			outline: 0;
+			text-decoration: none;
+			transition: 1s;			
+		}
+		.texto:hover{
+			color: #870002;
+			font-size: 2em;
+			font-weight: bold;			
+			outline: 0;
+			text-decoration: none;				
+		}
+	</style>
+</head>
+<body>
+	<div id="demo-content">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+	<div>	
+<div name="global" align="center">
+	<div>
+		<img src="imagens/Logotipo0.png" class="logo">
+	</div>
+	<table cellspacing="9">
+		<tr>
+			<div class="title">
+					Escolha uma operação.
+			</div>
+		</tr>
+		<tr>
+			<td>
+				<button class="botao"><a href="losango.html" class="texto">Á. Losango</a></button>
+			</td>
+			<td>
+				<button class="botao"><a href="herao.html" class="texto">Herão</a></button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="botao"><a href="circulo.html" class="texto">Á. Circulo</a></button>
+			</td>
+			<td>
+				<button class="botao"><a href="pitagoras.html" class="texto">Pitágoras</a></button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="botao"><a href="trapezio.html" class="texto">Á. Trapézio</a></button>
+			</td>
+			<td>
+				<button class="botao"><a href="baskhara.html" class="texto">Bhaskara</a></button>
+			</td>
+		</tr>				
+	</table>
+</div>	
+</body>
+</html>

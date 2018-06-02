@@ -1,0 +1,266 @@
+<html lang="pt-br">
+<head>
+	<title>Área do círculo</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="imagens/Logo.png">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/component2.css" />
+	<script src="js/modernizr-2.6.2.min.js"></script>	
+	<style type="text/css">
+	.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+	}
+	.back-link a:hover,
+	.back-link a:focus {
+		color: #408536; 
+		text-decoration: none;
+		border-bottom: 1px #408536 solid;
+	}
+	h1 {
+		height: 100%;
+		margin: 0;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 32px;
+		margin-bottom: 3px;
+	}
+	.entry-header {
+		text-align: left;
+		margin: 0 auto 50px auto;
+		width: 80%;
+        max-width: 978px;
+		position: relative;
+		z-index: 10001;
+	}
+	#demo-content {
+		padding-top: 100px;
+	}
+	body{
+		background-image: url(imagens/found2.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		font-family: arial;
+		font-size: 18pt;
+		color: white;
+		overflow: hidden;
+	}
+	a, button {
+		outline: none;
+	}	
+
+	a {
+		text-decoration: none;
+	}	
+	.botao{
+		color: white;
+		font-size: 14pt;
+		font-weight: bold;
+		background-color: #870002;
+		width: 120px;
+		height: 50px;
+		border-radius: 12px;
+		border: none;
+		outline: 0;
+		text-decoration: none;
+		line-height: 1;		
+	}	
+	.logo{
+		width: 167px;
+		height: 128px;
+	}
+	.bo{
+		width: 52%;
+		height: 32px;
+		outline: 0;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 1.5em;
+	}
+	.bot{
+		color: white;
+		width: 90%;
+		outline: 0;
+		text-decoration: none;
+		border: 0 none;
+		font-weight: bold;
+		font-size: 14pt;
+		box-shadow: 0 0 0 0;
+		background: none;
+	}
+	.conte{
+		background-attachment: fixed;
+		margin: auto;
+		width: 1000px;
+		height: 90%;
+	}
+	.autor{
+		width: 170px;
+		height: 200px;
+	}
+	.hoverzoom {
+		position: relative;
+    	width: 250px;
+    	overflow: hidden;
+	}
+	.hoverzoom > img {
+   		width: 100%; 
+		border-radius: 2px;
+		-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	}
+	.hoverzoom:hover > img {
+		-webkit-transform: scale(1.5);
+	}
+	.hoverzoom .retina{
+		position: absolute;
+    	width: 75%;
+    	height: 100%;
+    	top: 0;
+    	left: 0;
+    	opacity: 0;    
+    	border-radius: 2px;
+    	text-align: center;
+    	padding: 30px;
+	}
+	.hoverzoom:hover .retina {
+    	opacity: 1;
+    	box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);  
+	}
+	.hoverzoom .retina p {
+		color: #fff;
+		font-size: 14pt;
+	}
+	.botao2{
+		color: white;
+		font-size: 1.5em;
+		font-weight: bold;
+		background-color: #870002;
+		width: 53%;
+		height: 42px;
+		border-radius: 12px;
+		border: none;
+		outline: 0;
+		text-decoration: none;
+		transition: 1s;		
+	}
+	.botao2:hover{
+		color: #870002;
+		background-color: white;
+	}
+	.direitos{
+		position: relative;
+		color: white;
+		font-size: 12pt;
+		line-height: 3;
+	}
+    #banner{
+      	margin-top: 100px;
+    }
+    .banner{
+      	width: 1000px;
+      
+    }
+    .menu {
+      	background-color: #870002
+      	color: white;
+      	padding: 16px;
+      	font-size: 16px;
+      	border: none;
+      	cursor: pointer;
+      	width: 140px;
+      	outline: 0;
+    }   
+    #barra2{
+      	width: 100%;
+      	height: 50px;
+      	background-color: #870002;
+      	margin: auto;
+      	margin-top: 5%;
+      	color: white;
+      	font-family: arial;
+   }
+   .component{
+   		margin-top: 15%;
+   }
+	</style>
+	<script src="js\circulo.js"></script>
+</head>
+<body>	
+		<div id="demo-content">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+	<div>
+<div align="center" class="conte">
+	<div>
+		<table cellspacing="50">
+			<tr>
+				<td>
+					<div class="hoverzoom">
+						<img src="imagens\circ.jpg">
+							<div class="retina">
+								<p>A= Pi*r²</p>
+					</div>
+					</div>
+					<td align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para calcular a área do círculo devemos utilizar a seguinte fórmula: A = π . r2 Donde, π: constante Pi (3,14) r: raio Fique Atento! Lembre-se que o raio (r) corresponde a distância entre o centro e a extremidade do círculo. Já o diâmetro é um segmento de reta que passa pelo centro do círculo, dividindo-o em duas metades iguais. Dito isso, o diâmetro equivale duas vezes o raio (2r).
+					</td>
+				</td>
+			</tr>
+		</table>
+	</div>
+		<form name="formu">
+			<table class="resultado">
+				<tr>
+					<td>Digite o valor do raio: </td>
+					<td><input type="text" name="rai" class="bo"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Calcular" onclick="calcular();" class="botao2"></td>
+					<td><input type="reset" value="Refazer" class="botao2"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="res" class="bot" style="border: 0;" disabled=""></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+<div class="component">
+	<button class="cn-button" id="cn-button">Menu</button>
+		<div class="cn-wrapper" id="cn-wrapper">
+			<ul>
+				<li><a href="losango.html"><span>Á. Losan.</span></a></li>
+				<li><a href="baskhara.html"><span>Bhaskara</span></a></li>
+				<li><a href="trapezio.html"><span>Á. Trapez.</span></a></li>
+				<li><a href="herao.html"><span>Herão</span></a></li>
+				<li><a href="pitagoras.html"><span>Pitágor.</span></a></li>
+				<li><a href="contato.html"><span>Contact</span></a></li>
+				<li><a href="index.html"><span>Home</span></a></li>
+			</ul>
+		</div>
+</div>
+		<script src="js/polyfills.js"></script>
+		<script src="js/demo2.js"></script>
+<div id="barra2">
+		<table>
+		<tr>
+			<p align="center" class="direitos">Todos os direitos reservados a BK® Web Development</p>
+		</tr>
+	</table>                                                     
+</div>			
+</body>
+</html>
